@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Custom batched GEMM
 //
-// C[b] = A[b] * B[b]
+C[b] = A[b] * B[b]
 //
 // Matrices are N x N, column-major.
 ////////////////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ void batched_gemm_cpu(int n, int batch_size,
 ////////////////////////////////////////////////////////////////////////////////
 // Forward error for one matrix
 //
-// ||Cgpu-Cref||_F / (N ||Cref||_F)
+||Cgpu-Cref||_F / (N ||Cref||_F)
 // ------------------------------------------------------------
 double forward_error(int n,
                      const float* result,
