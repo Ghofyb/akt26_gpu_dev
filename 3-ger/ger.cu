@@ -10,7 +10,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Custom rank-1 update kernel
-// A <- A + alpha * x * y^T
+A <- A + alpha * x * y^T
 // Column-major storage: A(i,j) = A[j*m + i]
 __global__ void ger_kernel(int m, int n, float alpha, const float* x, const float* y, float* A)
 {
